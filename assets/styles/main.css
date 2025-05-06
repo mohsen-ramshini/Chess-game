@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*  Chess Container */
+
+.chessBoardContainer{
+    grid-column: 1 / span 1;
+    background-color: brown;
+    place-items: center;
+    place-content: center;
+}
+
+/* Chess Board Layout */
+
+.chessBoard{
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    background-color: aqua;
+}
+
+.board {
+    width: 85ex;
+    height: 85ex;
+    background-color: azure;
+}
+
+.f-row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0;
+    margin: 0;
+}
+
+
+.f-row li {
+    width: 100%;
+    aspect-ratio: 1; 
+    background-color: #413c3c;
+    list-style: none;
+    border: 1px solid;
+}
+
+.f-row-even li:nth-child(even) {
+    background-color: #282421;
+}
+.f-row-odd li:nth-child(odd) {
+    background-color: #282421;
+}
+
+/* Chat Layout */
+
+.chat {
+    grid-column: 2 / -1;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chatScreen{
+    width: 80%;
+    height: 90%;
+    place-self: center;
+    background-color: black;
+}
+
