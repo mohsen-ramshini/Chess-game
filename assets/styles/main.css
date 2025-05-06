@@ -30,14 +30,14 @@ body{
     justify-content: center;
     align-items: center;
     width: 95%;
-    height: 90%;
-    background-color: aqua;
+    height: 95%;
+    
 }
 
 .board {
-    width: 85ex;
-    height: 85ex;
-    background-color: azure;
+    width: 80ex;
+    height: 97%;
+    border: 5px solid #282421;
 }
 
 .f-row {
@@ -50,6 +50,7 @@ body{
 
 
 .f-row li {
+    min-width: 70px;
     width: 100%;
     aspect-ratio: 1; 
     background-color: #413c3c;
@@ -82,3 +83,9 @@ body{
     background-color: black;
 }
 
+
+#control{
+    position: relative;
+    right: 100px;
+    transform: rotate(55deg);
+}
