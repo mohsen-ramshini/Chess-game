@@ -52,6 +52,17 @@ body {
     font-family: sans-serif;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-border {
+    outline: 3px solid white;
+    outline-offset: -3px;
+}
+  
 .f-row-even li:nth-child(even),
 .f-row-odd li:nth-child(odd) {
     background-color: #282421;
