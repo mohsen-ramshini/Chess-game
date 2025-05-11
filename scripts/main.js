@@ -98,7 +98,7 @@
   
       square.addEventListener("drop", (event) => {
         event.preventDefault();
-        square.classList.remove("hover-border"); // وقتی مهره انداخته شد، بردر پاک شود
+        square.classList.remove("hover-border"); 
         const pieceId = event.dataTransfer.getData("text/plain");
         const piece = document.getElementById(pieceId);
         if (piece) {
