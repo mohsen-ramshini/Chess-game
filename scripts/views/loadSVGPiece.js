@@ -1,3 +1,5 @@
+import { makeDraggable } from "./makeDraggable.js";
+
 // svgLoader.js
 export async function loadSVGPiece(filePath, targetElement, pieceId) {
     try {
@@ -29,16 +31,5 @@ export async function loadSVGPiece(filePath, targetElement, pieceId) {
       console.error("Error loading SVG:", error);
       alert("Error loading piece. Please try again later.");
     }
-  }
-  
-  // تابعی برای ایجاد ویژگی‌های درگ و دراپ
-  function makeDraggable(svgElement, pieceId) {
-    svgElement.setAttribute("draggable", true);
-    svgElement.setAttribute("id", pieceId);
-    svgElement.classList.add("selectable");
-  
-    svgElement.addEventListener("dragstart", (event) => {
-      event.dataTransfer.setData("text/plain", pieceId);
-    });
   }
   

@@ -1,5 +1,7 @@
 // piece.js
-import { Pieces } from "./constants.js";
+
+import { makeDraggable } from "./makeDraggable.js";
+
 export async function loadPiece(filePath, targetElement, pieceId) {
   try {
     const response = await fetch(filePath);

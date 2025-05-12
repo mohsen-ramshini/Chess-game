@@ -1,5 +1,6 @@
 // setup.js
-import { loadPiece } from './piece.js';
+import { loadPiece } from './loadPiece.js';
+import { Pieces } from "../config/constants.js";
 
 export function arrangePieces() {
   const allSquares = document.querySelectorAll(".board li");
